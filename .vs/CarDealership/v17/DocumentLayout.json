@@ -1,0 +1,273 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\walid\\source\\repos\\CarDealership\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|c:\\users\\walid\\source\\repos\\cardealership\\cardealership\\ribbonform1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|solutionrelative:cardealership\\ribbonform1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|C:\\Users\\walid\\source\\repos\\CarDealership\\cardealership\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|solutionrelative:cardealership\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|C:\\Users\\walid\\source\\repos\\CarDealership\\cardealership\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|solutionrelative:cardealership\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|C:\\Users\\walid\\source\\repos\\CarDealership\\cardealership\\contact.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|solutionrelative:cardealership\\contact.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|C:\\Users\\walid\\source\\repos\\CarDealership\\cardealership\\signup.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|solutionrelative:cardealership\\signup.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|C:\\Users\\walid\\source\\repos\\CarDealership\\cardealership\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|solutionrelative:cardealership\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|C:\\Users\\walid\\source\\repos\\CarDealership\\cardealership\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|solutionrelative:cardealership\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|C:\\Users\\walid\\source\\repos\\CarDealership\\cardealership\\ribbonform1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|solutionrelative:cardealership\\ribbonform1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|C:\\Users\\walid\\source\\repos\\CarDealership\\cardealership\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|solutionrelative:cardealership\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|C:\\Users\\walid\\source\\repos\\CarDealership\\cardealership\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|solutionrelative:cardealership\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|C:\\Users\\walid\\source\\repos\\CarDealership\\cardealership\\cardetails.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|solutionrelative:cardealership\\cardetails.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|C:\\Users\\walid\\source\\repos\\CarDealership\\cardealership\\cardetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|solutionrelative:cardealership\\cardetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|C:\\Users\\walid\\source\\repos\\CarDealership\\cardealership\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|solutionrelative:cardealership\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|C:\\Users\\walid\\source\\repos\\CarDealership\\cardealership\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|solutionrelative:cardealership\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|C:\\Users\\walid\\source\\repos\\CarDealership\\cardealership\\ribbonform1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|solutionrelative:cardealership\\ribbonform1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|C:\\Users\\walid\\source\\repos\\CarDealership\\cardealership\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{2CE7C925-CDED-458C-AF8D-57F4AC2B1065}|CarDealership\\CarDealership.csproj|solutionrelative:cardealership\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Contact.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\Contact.Designer.cs",
+              "RelativeDocumentMoniker": "CarDealership\\Contact.Designer.cs",
+              "ToolTip": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\Contact.Designer.cs",
+              "RelativeToolTip": "CarDealership\\Contact.Designer.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwC8AAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T20:51:17.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\Contact.cs",
+              "RelativeDocumentMoniker": "CarDealership\\Contact.cs",
+              "ToolTip": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\Contact.cs",
+              "RelativeToolTip": "CarDealership\\Contact.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T20:48:38.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SignUp.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\SignUp.Designer.cs",
+              "RelativeDocumentMoniker": "CarDealership\\SignUp.Designer.cs",
+              "ToolTip": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\SignUp.Designer.cs",
+              "RelativeToolTip": "CarDealership\\SignUp.Designer.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwDwAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T20:29:25.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LogIn.cs",
+              "DocumentMoniker": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\LogIn.cs",
+              "RelativeDocumentMoniker": "CarDealership\\LogIn.cs",
+              "ToolTip": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\LogIn.cs",
+              "RelativeToolTip": "CarDealership\\LogIn.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwAkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T19:22:18.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LogIn.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\LogIn.Designer.cs",
+              "RelativeDocumentMoniker": "CarDealership\\LogIn.Designer.cs",
+              "ToolTip": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\LogIn.Designer.cs",
+              "RelativeToolTip": "CarDealership\\LogIn.Designer.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T19:22:39.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RibbonForm1.cs",
+              "DocumentMoniker": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\RibbonForm1.cs",
+              "RelativeDocumentMoniker": "CarDealership\\RibbonForm1.cs",
+              "ToolTip": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\RibbonForm1.cs",
+              "RelativeToolTip": "CarDealership\\RibbonForm1.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAgwGUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T07:47:09.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SignUp.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\SignUp.cs",
+              "RelativeDocumentMoniker": "CarDealership\\SignUp.cs",
+              "ToolTip": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\SignUp.cs [Design]",
+              "RelativeToolTip": "CarDealership\\SignUp.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T20:48:55.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RibbonForm1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\RibbonForm1.cs",
+              "RelativeDocumentMoniker": "CarDealership\\RibbonForm1.cs",
+              "ToolTip": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\RibbonForm1.cs [Design]",
+              "RelativeToolTip": "CarDealership\\RibbonForm1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T18:28:42.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\Program.cs",
+              "RelativeDocumentMoniker": "CarDealership\\Program.cs",
+              "ToolTip": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\Program.cs",
+              "RelativeToolTip": "CarDealership\\Program.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAQwBQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T09:06:05.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SignUp.cs",
+              "DocumentMoniker": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\SignUp.cs",
+              "RelativeDocumentMoniker": "CarDealership\\SignUp.cs",
+              "ToolTip": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\SignUp.cs",
+              "RelativeToolTip": "CarDealership\\SignUp.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAkwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T20:29:15.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CarDetails.cs",
+              "DocumentMoniker": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\CarDetails.cs",
+              "RelativeDocumentMoniker": "CarDealership\\CarDetails.cs",
+              "ToolTip": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\CarDetails.cs",
+              "RelativeToolTip": "CarDealership\\CarDetails.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAYwDIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T09:27:17.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CarDetails.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\CarDetails.Designer.cs",
+              "RelativeDocumentMoniker": "CarDealership\\CarDetails.Designer.cs",
+              "ToolTip": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\CarDetails.Designer.cs",
+              "RelativeToolTip": "CarDealership\\CarDetails.Designer.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAYwG4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T10:16:16.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomePage.cs",
+              "DocumentMoniker": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\HomePage.cs",
+              "RelativeDocumentMoniker": "CarDealership\\HomePage.cs",
+              "ToolTip": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\HomePage.cs",
+              "RelativeToolTip": "CarDealership\\HomePage.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAYwEoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T09:57:55.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HomePage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\HomePage.cs",
+              "RelativeDocumentMoniker": "CarDealership\\HomePage.cs",
+              "ToolTip": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\HomePage.cs [Design]",
+              "RelativeToolTip": "CarDealership\\HomePage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T11:04:48.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RibbonForm1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\RibbonForm1.Designer.cs",
+              "RelativeDocumentMoniker": "CarDealership\\RibbonForm1.Designer.cs",
+              "ToolTip": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\RibbonForm1.Designer.cs",
+              "RelativeToolTip": "CarDealership\\RibbonForm1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T09:49:01.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "CarDealership\\Properties\\Resources.resx",
+              "ToolTip": "C:\\Users\\walid\\source\\repos\\CarDealership\\CarDealership\\Properties\\Resources.resx",
+              "RelativeToolTip": "CarDealership\\Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-27T09:17:22.2Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
