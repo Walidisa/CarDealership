@@ -15,6 +15,7 @@ namespace CarDealership
         private TextBox txtPassword;
         private Button btnLogin;
         private Button btnExit;
+        private Button btnQuickLogIn;
 
         protected override void Dispose(bool disposing)
         {
@@ -32,6 +33,8 @@ namespace CarDealership
             this.txtPassword = new TextBox();
             this.btnLogin = new Button();
             this.btnExit = new Button();
+            this.btnQuickLogIn = new Button();
+
             this.SuspendLayout();
 
             // Form
@@ -43,16 +46,16 @@ namespace CarDealership
             // panelLogin
             this.panelLogin.BackColor = System.Drawing.Color.White;
             this.panelLogin.BorderStyle = BorderStyle.FixedSingle;
-            this.panelLogin.Width = 700;
-            this.panelLogin.Height = 600;
+            this.panelLogin.Width = 680;
+            this.panelLogin.Height = 580;
             this.panelLogin.Location = new System.Drawing.Point(1140, 398);
 
 
             // lblTitle
-            this.lblTitle.Text = "Login";
+            this.lblTitle.Text = "LogIn";
             this.lblTitle.Font = new Font("Segoe UI", 32F, FontStyle.Bold);
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Location = new Point(250, 40);
+            this.lblTitle.Location = new Point(200, 10);
 
             // lblUsername
             this.lblUsername.Text = "Username:";
@@ -78,11 +81,11 @@ namespace CarDealership
             this.txtPassword.PasswordChar = '*';
 
             // btnLogin
-            this.btnLogin.Text = "Login";
+            this.btnLogin.Text = "LogIn";
             this.btnLogin.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             this.btnLogin.BackColor = Color.SteelBlue;
             this.btnLogin.ForeColor = Color.White;
-            this.btnLogin.Size = new Size(250, 60);
+            this.btnLogin.Size = new Size(260, 70);
             this.btnLogin.Location = new Point(60, 380);
             this.btnLogin.Click += new EventHandler(this.btnLogin_Click);
 
@@ -91,9 +94,18 @@ namespace CarDealership
             this.btnExit.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             this.btnExit.BackColor = Color.LightGray;
             this.btnExit.ForeColor = Color.Black;
-            this.btnExit.Size = new Size(250, 60);
+            this.btnExit.Size = new Size(260, 70);
             this.btnExit.Location = new Point(360, 380);
             this.btnExit.Click += new EventHandler(this.btnExit_Click);
+
+            // btnQuickLogIn
+            this.btnQuickLogIn.Text = "Quick LogIn";
+            this.btnQuickLogIn.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            this.btnQuickLogIn.BackColor = Color.LightGreen;
+            this.btnQuickLogIn.ForeColor = Color.Black;
+            this.btnQuickLogIn.Size = new Size(560, 70);
+            this.btnQuickLogIn.Location = new Point(60, 470);
+            this.btnQuickLogIn.Click += new EventHandler(this.btnQuickLogIn_Click);
 
             // Add controls to panel
             this.panelLogin.Controls.Add(this.lblTitle);
@@ -103,6 +115,7 @@ namespace CarDealership
             this.panelLogin.Controls.Add(this.txtPassword);
             this.panelLogin.Controls.Add(this.btnLogin);
             this.panelLogin.Controls.Add(this.btnExit);
+            this.panelLogin.Controls.Add(this.btnQuickLogIn);
 
             // Add panel to form
             this.Controls.Add(this.panelLogin);

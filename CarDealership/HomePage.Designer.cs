@@ -27,6 +27,7 @@ namespace CarDealership
             this.carFlowPanel.Name = "carFlowPanel";
             this.carFlowPanel.Size = new System.Drawing.Size(1200, 703);
             this.carFlowPanel.TabIndex = 0;
+            this.carFlowPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.carFlowPanel_Paint);
             // 
             // HomePage
             // 

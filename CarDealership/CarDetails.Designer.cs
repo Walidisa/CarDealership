@@ -7,10 +7,11 @@ namespace CarDealership
     partial class CarDetails
     {
         private System.ComponentModel.IContainer components = null;
-        private System.Windows.Forms.PictureBox picCar;
-        private System.Windows.Forms.Label lblMakeModel, lblYear, lblPrice, lblMileage,
-                                           lblCondition, lblFuel, lblTransmission, lblColor, lblVIN;
-        private System.Windows.Forms.Button btnClose, btnBuy, btnMorePics;
+        private PictureBox picCar;
+        private Label lblMakeModel, lblYear, lblPrice, lblMileage,
+                      lblCondition, lblFuel, lblTransmission, lblColor,
+                      lblVIN, lblVendor;
+        private Button btnClose, btnBuy;
 
         protected override void Dispose(bool disposing)
         {
@@ -30,22 +31,21 @@ namespace CarDealership
             this.lblTransmission = new Label();
             this.lblColor = new Label();
             this.lblVIN = new Label();
+            this.lblVendor = new Label(); // NEW
             this.btnClose = new Button();
             this.btnBuy = new Button();
-            this.btnMorePics = new Button();
-
 
             ((System.ComponentModel.ISupportInitialize)(this.picCar)).BeginInit();
             this.SuspendLayout();
 
-            // Full window settings
+            // Form
             this.WindowState = FormWindowState.Maximized;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = Color.White;
             this.Text = "Car Details";
 
             // picCar
-            this.picCar.Location = new System.Drawing.Point(50, 250);
-            this.picCar.Size = new System.Drawing.Size(1600, 1000);
+            this.picCar.Location = new Point(50, 250);
+            this.picCar.Size = new Size(1600, 1000);
             this.picCar.SizeMode = PictureBoxSizeMode.Zoom;
 
             int labelX = 1650;
@@ -64,7 +64,7 @@ namespace CarDealership
 
             // lblPrice
             this.lblPrice.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
-            this.lblPrice.ForeColor = System.Drawing.Color.Green;
+            this.lblPrice.ForeColor = Color.Green;
             this.lblPrice.Location = new Point(labelX, startY + 2 * verticalSpacing);
             this.lblPrice.AutoSize = true;
 
@@ -98,37 +98,30 @@ namespace CarDealership
             this.lblVIN.Location = new Point(labelX, startY + 8 * verticalSpacing);
             this.lblVIN.AutoSize = true;
 
+            // lblVendor (NEW)
+            this.lblVendor.Font = new Font("Segoe UI", 25F);
+            this.lblVendor.Location = new Point(labelX, startY + 9 * verticalSpacing);
+            this.lblVendor.AutoSize = true;
+
             // btnBuy
             this.btnBuy.Text = "Buy";
             this.btnBuy.TextAlign = ContentAlignment.MiddleCenter;
             this.btnBuy.Font = new Font("Segoe UI", 23F);
             this.btnBuy.Size = new Size(400, 140);
-            this.btnBuy.Location = new Point(labelX, 20 + startY + 9 * verticalSpacing);
-            this.btnBuy.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnBuy.Location = new Point(labelX, 20 + startY + 10 * verticalSpacing);
+            this.btnBuy.BackColor = Color.LightSteelBlue;
             this.btnBuy.Click += new EventHandler(this.btnBuy_Click);
-
-            // btnMorePics
-            this.btnMorePics.Text = "Pictures";
-            this.btnMorePics.Font = new Font("Segoe UI", 23F);
-            this.btnMorePics.Size = new Size(400, 140);
-            this.btnMorePics.Location = new Point(labelX + 500, 20 + startY + 9 * verticalSpacing);
-            this.btnMorePics.TextAlign = ContentAlignment.MiddleCenter;
-            this.btnMorePics.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnMorePics.Click += new EventHandler(this.btnMorePics_Click);
-
 
             // btnClose
             this.btnClose.Text = "Close";
             this.btnClose.TextAlign = ContentAlignment.MiddleCenter;
             this.btnClose.Font = new Font("Segoe UI", 23F);
             this.btnClose.Size = new Size(400, 140);
-            this.btnClose.Location = new Point((labelX+labelX+500)/2, 150 + startY + 10 * verticalSpacing);
-            this.btnClose.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnClose.Location = new Point(labelX + 500, 20 + startY + 10 * verticalSpacing);
+            this.btnClose.BackColor = Color.LightSteelBlue;
             this.btnClose.Click += new EventHandler(this.btnClose_Click);
 
-            // Add controls
-            this.Controls.Add(this.btnBuy);
-            this.Controls.Add(this.btnMorePics);
+            // Add Controls
             this.Controls.Add(this.picCar);
             this.Controls.Add(this.lblMakeModel);
             this.Controls.Add(this.lblYear);
@@ -139,6 +132,8 @@ namespace CarDealership
             this.Controls.Add(this.lblTransmission);
             this.Controls.Add(this.lblColor);
             this.Controls.Add(this.lblVIN);
+            this.Controls.Add(this.lblVendor); // NEW
+            this.Controls.Add(this.btnBuy);
             this.Controls.Add(this.btnClose);
 
             ((System.ComponentModel.ISupportInitialize)(this.picCar)).EndInit();

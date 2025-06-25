@@ -8,10 +8,13 @@ namespace CarDealership
 {
     public partial class CarDetails : Form
     {
+        private Car currentCar;
+
         public CarDetails(Car car)
         {
             InitializeComponent();
             LoadDetails(car);
+            currentCar = car;
             this.WindowState = FormWindowState.Maximized;
         }
 
@@ -26,6 +29,8 @@ namespace CarDealership
             lblTransmission.Text = $"Transmission: {car.Transmission}";
             lblColor.Text = $"Color: {car.Color}";
             lblVIN.Text = $"VIN: {car.VIN}";
+            lblVendor.Text = $"Seller: {car.Vendor?.Name ?? "Unknown"}";
+
 
             try
             {
@@ -41,14 +46,11 @@ namespace CarDealership
         {
             this.Close();
         }
-        private void btnMorePics_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("More Pics  feature is not implemented yet.");
-
-        }
         private void btnBuy_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Buy feature is not implemented yet.");
+
+            var contactForm = new ContactVendorForm(currentCar);
+            contactForm.Show();
         }
     }
 }

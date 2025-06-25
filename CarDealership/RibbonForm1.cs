@@ -1,8 +1,10 @@
 ﻿using DevExpress.XtraBars;
+using DevExpress.XtraEditors.Repository;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,21 +15,35 @@ namespace CarDealership
 {
     public partial class RibbonForm1 : DevExpress.XtraBars.Ribbon.RibbonForm
     {
+        public static Vendor currentVendor { get; set; }
+
+
         public RibbonForm1()
         {
             InitializeComponent();
+            DevExpress.Skins.SkinManager.EnableFormSkins();
+            DevExpress.LookAndFeel.UserLookAndFeel.Default.SkinName = "Office 365";
+            ribbon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.OfficeUniversal;
+            this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow;
+            ribbon.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
+            ribbon.ShowToolbarCustomizeItem = false;
+            ribbon.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             ribbon.SelectedPageChanged += Ribbon_SelectedPageChanged;
             this.IsMdiContainer = true;
+            this.WindowState = FormWindowState.Maximized;
             HomePage home = new HomePage();
             home.MdiParent = this;
-            // Optional: if you want it as an MDI child
+           
             home.Show();
+            dashboard.Visible = false;
+            Inbox.Visible = false;
+            searchItem.EditValueChanged += SearchItem_EditValueChanged;
+
         }
         private void Ribbon_SelectedPageChanged(object sender, EventArgs e)
         {
             if (ribbon.SelectedPage == homePage)
             {
-                // Show the HomePage form only if it's not already open
                 foreach (Form f in Application.OpenForms)
                 {
                     if (f is HomePage)
@@ -37,12 +53,11 @@ namespace CarDealership
                     }
                 }
                 HomePage home = new HomePage();
-                home.MdiParent = this; // Optional: if you want it as an MDI child
+                home.MdiParent = this;
                 home.Show();
             }
             if (ribbon.SelectedPage == logIn)
             {
-                // Show the HomePage form only if it's not already open
                 foreach (Form f in Application.OpenForms)
                 {
                     if (f is LogIn)
@@ -52,12 +67,11 @@ namespace CarDealership
                     }
                 }
                 LogIn lg = new LogIn();
-                lg.MdiParent = this; // Optional: if you want it as an MDI child
+                lg.MdiParent = this;
                 lg.Show();
             }
             if (ribbon.SelectedPage == signUp)
             {
-                // Show the HomePage form only if it's not already open
                 foreach (Form f in Application.OpenForms)
                 {
                     if (f is SignUp)
@@ -67,27 +81,25 @@ namespace CarDealership
                     }
                 }
                 SignUp sg = new SignUp();
-                sg.MdiParent = this; // Optional: if you want it as an MDI child
+                sg.MdiParent = this;
                 sg.Show();
             }
-            //if (ribbon.SelectedPage == aboutUs)
-            //{
-            //    // Show the HomePage form only if it's not already open
-            //    foreach (Form f in Application.OpenForms)
-            //    {
-            //        if (f is AboutUs)
-            //        {
-            //            f.BringToFront();
-            //            return;
-            //        }
-            //    }
-            //    AboutUs au = new AboutUs();
-            //    au.MdiParent = this; // Optional: if you want it as an MDI child
-            //    au.Show();
-            //}
+            if (ribbon.SelectedPage == dashboard)
+            {
+                foreach (Form f in Application.OpenForms)
+                {
+                    if (f is VendorDashboard)
+                    {
+                        f.BringToFront();
+                        return;
+                    }
+                }
+                VendorDashboard vd = new VendorDashboard(currentVendor);
+                vd.MdiParent = this;
+                vd.Show();
+            }
             if (ribbon.SelectedPage == contactUs)
             {
-                // Show the HomePage form only if it's not already open
                 foreach (Form f in Application.OpenForms)
                 {
                     if (f is ContactUs)
@@ -97,14 +109,61 @@ namespace CarDealership
                     }
                 }
                 ContactUs cu = new ContactUs();
-                cu.MdiParent = this; // Optional: if you want it as an MDI child
+                cu.MdiParent = this;
                 cu.Show();
             }
-
+            if (ribbon.SelectedPage == Inbox)
+            {
+                foreach (Form f in Application.OpenForms)
+                {
+                    if (f is InboxForm)
+                    {
+                        f.BringToFront();
+                        return;
+                    }
+                }
+                InboxForm inf = new InboxForm(currentVendor);
+                inf.MdiParent = this;
+                inf.Show();
+            }
+        }
+        public void UpdateUIAfterLogin()
+        {
+            logIn.Visible = false;
+            signUp.Visible = false;
+            dashboard.Visible = true;
+            Inbox.Visible = true; 
+        }
+        public void UpdateUIAfterLogout()
+        {
+            logIn.Visible = true;
+            signUp.Visible = true;
+            dashboard.Visible = false;
+            Inbox.Visible = false;
+            ribbon.SelectedPage = homePage; // Reset to HomePage after logout
         }
 
 
+        private void SearchItem_EditValueChanged(object sender, EventArgs e)
+        {
+            var editItem = sender as DevExpress.XtraBars.BarEditItem;
+            string searchText = editItem?.EditValue?.ToString() ?? "";
+
+            foreach (Form f in this.MdiChildren)
+            {
+                if (f is HomePage homePage)
+                {
+                    homePage.PerformSearch(searchText);
+                }
+            }
+        }
+
         private void RibbonForm1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ribbon_Click(object sender, EventArgs e)
         {
 
         }
