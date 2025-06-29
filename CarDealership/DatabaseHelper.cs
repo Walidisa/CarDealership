@@ -136,6 +136,36 @@ namespace CarDealership
 
             }
 
+            var sampleMessages = new List<BuyerMessage>
+            {
+                new BuyerMessage("Ali", "ali@example.com", "Is this Camry still available?", testCars[0]),
+                new BuyerMessage("Sara", "sara@example.com", "Can I test drive the Civic tomorrow?", testCars[1]),
+                new BuyerMessage("John", "john@example.com", "Does the Mustang have any accident history?", testCars[2]),
+                new BuyerMessage("Fatima", "fatima@gmail.com", "What's the battery condition of the Tesla?", testCars[3]),
+                new BuyerMessage("Omar", "omar@outlook.com", "Is the Malibu still under warranty?", testCars[4]),
+                new BuyerMessage("Linda", "linda@ymail.com", "Can you negotiate the price of the Altima?", testCars[5]),
+                new BuyerMessage("James", "james@hotmail.com", "Does the BMW come with winter tires?", testCars[6]),
+                new BuyerMessage("Amira", "amira@example.com", "Where is the Audi located for viewing?", testCars[7]),
+                new BuyerMessage("Karim", "karim@live.com", "Can you send more photos of the Mercedes?", testCars[8]),
+                new BuyerMessage("Zainab", "zainab@gmail.com", "What’s the service history of the Jetta?", testCars[9]),
+                new BuyerMessage("Ethan", "ethan@protonmail.com", "Is the Elantra available this weekend?", testCars[10]),
+                new BuyerMessage("Aisha", "aisha@yahoo.com", "How many previous owners did the Optima have?", testCars[11])
+            };
+
+            foreach (var msg in sampleMessages)
+            {
+                try
+                {
+                    DatabaseHelper.InsertBuyerMessage(msg, guest);
+                    guest.Inbox.Add(msg); // Update in-memory inbox for guest vendor
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error inserting message from {msg.FromName}: {ex.Message}");
+                }
+            }
+
+
             void EnsureAdminAccount()
             {
                 try
@@ -509,6 +539,33 @@ namespace CarDealership
             {
                 conn.Open();
 
+                // Step 1: Check for duplicate
+                string checkSql = @"
+            SELECT COUNT(*) FROM BuyerMessages
+            WHERE VendorID = @VendorID
+              AND FromName = @FromName
+              AND FromEmail = @FromEmail
+              AND MessageBody = @MessageBody
+              AND RelatedCarVIN = @RelatedCarVIN;
+        ";
+
+                using (var checkCmd = new SQLiteCommand(checkSql, conn))
+                {
+                    checkCmd.Parameters.AddWithValue("@VendorID", vendor.VendorID);
+                    checkCmd.Parameters.AddWithValue("@FromName", message.FromName);
+                    checkCmd.Parameters.AddWithValue("@FromEmail", message.FromEmail);
+                    checkCmd.Parameters.AddWithValue("@MessageBody", message.MessageBody);
+                    checkCmd.Parameters.AddWithValue("@RelatedCarVIN", message.RelatedCar.VIN);
+
+                    long count = (long)checkCmd.ExecuteScalar();
+                    if (count > 0)
+                    {
+                        // Message already exists
+                        return;
+                    }
+                }
+
+                // Step 2: Insert if not found
                 string insertSql = @"
             INSERT INTO BuyerMessages
             (VendorID, FromName, FromEmail, MessageBody, RelatedCarVIN, ReceivedAt)
@@ -517,7 +574,6 @@ namespace CarDealership
 
                 using (var cmd = new SQLiteCommand(insertSql, conn))
                 {
-                    // No need to set MessageID, it's auto-incremented
                     cmd.Parameters.AddWithValue("@VendorID", vendor.VendorID);
                     cmd.Parameters.AddWithValue("@FromName", message.FromName);
                     cmd.Parameters.AddWithValue("@FromEmail", message.FromEmail);
@@ -679,13 +735,17 @@ namespace CarDealership
 
                 string deleteQuery = @"
             DELETE FROM BuyerMessages
-            WHERE VendorID = @VendorID AND FromEmail = @FromEmail AND CarVIN = @CarVIN AND MessageBody = @MessageBody;";
+            WHERE VendorID = @VendorID 
+              AND FromEmail = @FromEmail 
+              AND RelatedCarVIN = @RelatedCarVIN 
+              AND MessageBody = @MessageBody;
+        ";
 
                 using (var cmd = new SQLiteCommand(deleteQuery, conn))
                 {
                     cmd.Parameters.AddWithValue("@VendorID", message.RelatedCar.Vendor.VendorID);
                     cmd.Parameters.AddWithValue("@FromEmail", message.FromEmail);
-                    cmd.Parameters.AddWithValue("@CarVIN", message.RelatedCar.VIN);
+                    cmd.Parameters.AddWithValue("@RelatedCarVIN", message.RelatedCar.VIN);
                     cmd.Parameters.AddWithValue("@MessageBody", message.MessageBody);
                     cmd.ExecuteNonQuery();
                 }
